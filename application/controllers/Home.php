@@ -11,6 +11,8 @@ class Home extends CI_Controller {
 	public function index()
 	{
 		$data['title'] = 'CodeIgniter - Template'; 
+		$this->load->view('common/head', $data);
+		
 		$data['description'] = 'Welcome to CodeIgniter';
 
 		// Load data from Model
